@@ -358,6 +358,11 @@ header form input {
   width: 373px;
 }
 
+.detail1,
+.detail2,
+.detail3 {
+  width: 245px;
+}
 .detail1 {
   background: url(img/offerDetails1.png) no-repeat;
   margin-top: 55px;
