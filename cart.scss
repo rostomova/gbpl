@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import 'variables';
+
+.newArrivals {
+  height: 142px;
+  background-color: #f8f3f4;
+
+  &Wrap {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Header {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    color: $pinkColor;
+  }
+
+  &Nav {
+    display: flex;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #636363;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+
+    &Link {
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #636363;
+    }
+
+    &Link:last-child {
+      font-weight: 700;
+      color: $pinkColor;
+    }
+  }
+}
+
+.cart {
+  margin-top: 90px;
+
+  &Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+
+    &Item {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: #222222;
+    }
+
+    &Item:first-child {
+      width: 500px;
+    }
+  }
+
+  &Product {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eaeaea;
+
+    &Details {
+      width: 500px;
+      display: flex;
+    }
+
+    &Detail {
+      margin-left: 22px;
+
+      h2 {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #222222;
+        margin-bottom: 38px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #6f6e6e;
+      }
+
+      span {
+        font-weight: 400;
+        color: #575757;
+      }
+    }
+
+    &Info {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #656565;
+    }
+
+    &Quantity {
+      input {
+        width: 54px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #656565;
+        text-align: center;
+      }
+    }
+    &Action {
+      margin-right: 20px;
+      i {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #c0c0c0;
+      }
+    }
+  }
+
+  &Actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+
+    button {
+      width: 235px;
+      height: 50px;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #4a4a4a;
+    }
+  }
+
+  &Checkout {
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #222222;
+    }
+
+    input {
+      height: 45px;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #b1b1b1;
+      padding-left: 17px;
+      margin-top: 22px;
+    }
+
+    &Shipping {
+      width: 355px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &Discount {
+      width: 355px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &Proceed {
+      // padding-left: 43;
+      // padding-right: 43px;
+      width: 360px;
+      background-color: #f5f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 214px;
+
+      &Total {
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 22px;
+        text-align: right;
+        margin-top: 40px;
+        width: 273px;
+      }
+    }
+  }
+}
+
+%cartBtn {
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-top: 22px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.quoteBtn {
+  width: 100px;
+  @extend %cartBtn;
+}
+
+.couponBtn {
+  width: 118px;
+  @extend %cartBtn;
+}
+
+.proceedBtn {
+  height: 50px;
+  background-color: $pinkColor;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  margin-top: 17px;
+  width: 273px;
+}
+
+.subTotal {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #4a4a4a;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.grandTotal {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222222;
+  margin-top: 14px;
+
+  span {
+    margin-left: 15px;
+    color: $pinkColor;
+  }
+}
