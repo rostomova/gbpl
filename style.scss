@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  width: $siteWidth;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  form {
+    height: 38px;
+    display: flex;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    margin-left: 37px;
+    overflow: hidden;
+
+    input {
+      width: 280px;
+      border: none;
+      font-family: inherit;
+      padding: 14px 16px;
+    }
+  }
+}
+
+.logo {
+  background: url(img/logo.png) no-repeat;
+  width: 167px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #222222;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 49px;
+  letter-spacing: 0.68px;
+  letter-spacing: 0.025em;
+  box-sizing: border-box;
+
+  span {
+    color: $pinkColor;
+    font-weight: 900;
+  }
+}
+
+.browse {
+  width: 87px;
+  border-right: 1px solid #e6e6e6;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.025em;
+  color: #222222;
+  i {
+    margin-left: 8px;
+  }
+}
+
+.search {
+  width: 36px;
+  color: #a4a4a4;
+  border: none;
+  border-left: 1px solid #e6e6e6;
+  background-color: #ffffff;
+}
+
+.cart {
+  margin-left: auto;
+  margin-right: 26px;
+}
+
+.account {
+  width: 130px;
+  height: 38px;
+  background-color: $pinkColor;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.38px;
+  i {
+    margin-left: 8px;
+  }
+}
+
+.top-menu {
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.promo {
+  height: 614px;
+  display: flex;
+  align-items: center;
+  background: #e8e8e8;
+
+  .container {
+    background: url(img/topHeaderBack.png) no-repeat right 50px top 6px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    background-size: 530px;
+  }
+
+  &Text {
+    border-left: 12px solid $pinkColor;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 900;
+    padding-left: 12px;
+    width: 510px;
+
+    &Top {
+      font-size: 60px;
+      letter-spacing: 1.5px;
+    }
+
+    &Bottom {
+      letter-spacing: 1px;
+
+      span {
+        color: $pinkColor;
+      }
+    }
+  }
+}
+
+.offers {
+  height: 825px;
+  margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.offer {
+  background-repeat: no-repeat;
+  width: 560px;
+  padding-top: 26px;
+  box-sizing: border-box;
+
+  &:first-child {
+    background-image: url(img/offer1.jpg);
+    height: 542px;
+  }
+
+  &:nth-child(2) {
+    background-image: url(img/offer2.jpg);
+    height: 261px;
+    margin-top: 20px;
+  }
+
+  &:nth-child(3) {
+    background-image: url(img/offer3.jpg);
+    height: 261px;
+  }
+
+  &:last-child {
+    background-image: url(img/offer4.jpg);
+    height: 542px;
+    margin-top: 20px;
+  }
+
+  &Text {
+    background-color: #ffffff;
+    padding: 16px 18px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
+    display: inline-block;
+
+    span {
+      color: $pinkColor;
+      font-size: 30px;
+      letter-spacing: 0.75px;
+    }
+  }
+}
+
+.featuredItems {
+  text-align: center;
+
+  &H2 {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin-top: 100px;
+  }
+  &Text {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  &Button {
+    width: 212px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.4px;
+    background-color: $pinkColor;
+    border: none;
+    text-align: center;
+    margin-top: 58px;
+
+    i {
+      padding-left: 9px;
+    }
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-top: 39px;
+
+  &:nth-child(n + 5) {
+    margin-top: 27px;
+  }
+
+  &ImgWrap {
+    position: relative;
+  }
+
+  &Buy {
+    height: 279px;
+    width: 261px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+
+    &Button {
+      height: 39px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      background: url(img/add_to_cart.svg) no-repeat left 13px center;
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 98px;
+      padding-left: 43px;
+      padding-right: 13px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .itemBuy {
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+  }
+
+  &Name {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 14px;
+    padding-top: 20px;
+  }
+
+  &Price {
+    color: $pinkColor;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 13px;
+    padding-top: 17px;
+    padding-bottom: 21px;
+    text-align: left;
+  }
+}
+
+.newOffer {
+  display: flex;
+  margin-top: 113px;
+
+  &Text {
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 39px;
+    margin-top: 146px;
+
+    &Top {
+      font-size: 54px;
+      letter-spacing: 1.5px;
+
+      span {
+        color: $pinkColor;
+      }
+    }
+
+    &Bottom {
+      font-size: 32px;
+      letter-spacing: 0.9px;
+    }
+  }
+
+  &Offer {
+    background: url(img/offerForWomen.jpg);
+    width: 767px;
+  }
+
+  &Details {
+    background-color: #222224;
+    padding-left: 36px;
+    width: 373px;
+  }
+}
+
+.detail {
+  &:first-child {
+    background: url(img/offerDetails1.png) no-repeat;
+    margin-top: 50px;
+  }
+
+  &:nth-child(2) {
+    background: url(img/offerDetails2.png) no-repeat;
+    margin-top: 50px;
+  }
+
+  &:last-child {
+    background: url(img/offerDetails3.png) no-repeat;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &H2 {
+    margin-left: 78px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  &Text {
+    margin-left: 78px;
+    margin-top: 12px;
+    width: 219px;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+  }
+}
+
+.mentions {
+  margin-top: 100px;
+  height: 438px;
+  background: no-repeat url(img/subscribe.jpg);
+  background-color: rgba(242, 242, 242, 0.5);
+  //TO DO сделать засветление картинки
+  background-size: cover;
+
+  &Wrap {
+    display: flex;
+    height: 438px;
+  }
+}
+
+.mention {
+  width: 50%;
+  display: flex;
+  align-items: start;
+
+  img {
+    margin-top: 110px;
+  }
+  &Quote {
+    margin-top: 110px;
+    margin-left: 28px;
+  }
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  color: #222224;
+  margin-right: 72px;
+
+  &Sign {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #222224;
+    margin-top: 19px;
+
+    span {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: $pinkColor;
+    }
+  }
+}
+
+.subscribe {
+  width: calc(50% - 1px);
+  border-left: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 148px;
+    font-size: 24px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #222224;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
+  }
+  form {
+    margin-top: 35px;
+
+    input {
+      width: 282px;
+      height: 46px;
+      background-color: #e1e1e1;
+      border-radius: 23px 0px 0px 23px;
+      border: none;
+      padding-left: 28px;
+    }
+
+    button {
+      width: 104px;
+      height: 46px;
+      background-color: $pinkColor;
+      border-radius: 0px 23px 23px 0px;
+      border: none;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #ffffff;
+    }
+  }
+}
+
+.bottom {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  &Brand {
+    width: 427px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #898989;
+    margin-top: 29px;
+  }
+
+  &Nav {
+    display: flex;
+    justify-content: space-between;
+
+    &Column {
+      display: flex;
+      flex-direction: column;
+      width: 155px;
+
+      &:not(:first-child) {
+        margin-left: 80px;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: $pinkColor;
+        margin-bottom: 34px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 59px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #898989;
+        line-height: 42px;
+      }
+    }
+  }
+}
+
+footer {
+  height: 79px;
+  background-color: #e6e6e6;
+  margin-top: 89px;
+  display: flex;
+  align-items: center;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText {
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #7a7a7a;
+}
+
+.footerNav {
+  display: flex;
+}
+
+.footerSocial {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+
+  i {
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #b2b2b2;
+  }
+
+  &:nth-child(2) {
+    background-color: $pinkColor;
+  }
+
+  &:nth-child(2) i {
+    color: #f7f7f8;
+  }
+}
