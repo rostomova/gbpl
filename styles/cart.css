@@ -1,55 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-.newArrivals {
-  height: 142px;
-  background-color: #f8f3f4;
-}
-
-.newArrivalsWrap {
-  height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.newArrivalsHeader {
-  font-size: 24px;
-  line-height: 20px;
-  font-weight: 900;
-  color: #f16d7f;
-}
-
-.newArrivalsNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.newArrivalsNav p {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  color: #636363;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.newArrivalsNavLink {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  color: #636363;
-}
-
-.newArrivalsNavLink:last-child {
-  font-weight: 700;
-  color: #f16d7f;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .cart {
