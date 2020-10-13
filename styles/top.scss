@@ -2,11 +2,6 @@
 
 @import 'variables';
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Lato, sans-serif;
 }
@@ -58,8 +53,6 @@ header {
   font-weight: 300;
   line-height: 49px;
   letter-spacing: 0.68px;
-  letter-spacing: 0.025em;
-  box-sizing: border-box;
 
   span {
     color: $pinkColor;
@@ -129,5 +122,51 @@ header {
 
   &:not(:last-child) {
     margin-right: 35px;
+  }
+}
+
+//cart, singlepage
+.newArrivals {
+  height: 142px;
+  background-color: #f8f3f4;
+
+  &Wrap {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Header {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    color: $pinkColor;
+  }
+
+  &Nav {
+    display: flex;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #636363;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+
+    &Link {
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #636363;
+    }
+
+    &Link:last-child {
+      font-weight: 700;
+      color: $pinkColor;
+    }
   }
 }

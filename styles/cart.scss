@@ -2,51 +2,6 @@
 
 @import 'variables';
 
-.newArrivals {
-  height: 142px;
-  background-color: #f8f3f4;
-
-  &Wrap {
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &Header {
-    font-size: 24px;
-    line-height: 20px;
-    font-weight: 900;
-    color: $pinkColor;
-  }
-
-  &Nav {
-    display: flex;
-
-    p {
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 300;
-      color: #636363;
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &Link {
-      text-decoration: none;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 300;
-      color: #636363;
-    }
-
-    &Link:last-child {
-      font-weight: 700;
-      color: $pinkColor;
-    }
-  }
-}
-
 .cart {
   margin-top: 90px;
 
@@ -198,8 +153,6 @@
     }
 
     &Proceed {
-      // padding-left: 43;
-      // padding-right: 43px;
       width: 360px;
       background-color: #f5f3f3;
       display: flex;

@@ -9,7 +9,7 @@
   background: #e8e8e8;
 
   .container {
-    background: url(img/topHeaderBack.png) no-repeat right 50px top 6px;
+    background: url(../img/topHeaderBack.png) no-repeat right 50px top 6px;
     height: inherit;
     display: flex;
     align-items: center;
@@ -56,23 +56,23 @@
   box-sizing: border-box;
 
   &:first-child {
-    background-image: url(img/offer1.jpg);
+    background-image: url(../img/offer1.jpg);
     height: 542px;
   }
 
   &:nth-child(2) {
-    background-image: url(img/offer2.jpg);
+    background-image: url(../img/offer2.jpg);
     height: 261px;
     margin-top: 20px;
   }
 
   &:nth-child(3) {
-    background-image: url(img/offer3.jpg);
+    background-image: url(../img/offer3.jpg);
     height: 261px;
   }
 
   &:last-child {
-    background-image: url(img/offer4.jpg);
+    background-image: url(../img/offer4.jpg);
     height: 542px;
     margin-top: 20px;
   }
@@ -146,10 +146,17 @@
 
   &ImgWrap {
     position: relative;
+    width: 261px;
+    height: 280px;
+
+    img {
+      width: 261px;
+      height: 280px;
+    }
   }
 
   &Buy {
-    height: 279px;
+    height: 280px;
     width: 261px;
     background: rgba(0, 0, 0, 0.5);
     display: none;
@@ -159,7 +166,7 @@
       height: 39px;
       border: 1px solid #ffffff;
       color: #ffffff;
-      background: url(img/add_to_cart.svg) no-repeat left 13px center;
+      background: url(../img/add_to_cart.svg) no-repeat left 13px center;
       background-color: rgba(0, 0, 0, 0);
       font-size: 13px;
       font-weight: 700;
@@ -186,6 +193,7 @@
     text-transform: uppercase;
     text-align: left;
     padding-left: 14px;
+    padding-right: 14px;
     padding-top: 20px;
   }
 
@@ -193,9 +201,10 @@
     color: $pinkColor;
     font-size: 16px;
     font-weight: 700;
-    padding-left: 13px;
+    padding-left: 14px;
     padding-top: 17px;
     padding-bottom: 21px;
+    padding-right: 14px;
     text-align: left;
   }
 }
@@ -226,7 +235,7 @@
   }
 
   &Offer {
-    background: url(img/offerForWomen.jpg);
+    background: url(../img/offerForWomen.jpg);
     width: 767px;
   }
 
@@ -239,23 +248,24 @@
 
 .detail {
   &:first-child {
-    background: url(img/offerDetails1.png) no-repeat;
+    background: url(../img/offerDetails1.png) no-repeat;
     margin-top: 50px;
   }
 
   &:nth-child(2) {
-    background: url(img/offerDetails2.png) no-repeat;
+    background: url(../img/offerDetails2.png) no-repeat;
     margin-top: 50px;
   }
 
   &:last-child {
-    background: url(img/offerDetails3.png) no-repeat;
+    background: url(../img/offerDetails3.png) no-repeat;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
   &H2 {
     margin-left: 78px;
+    width: 219px;
     color: #fbfbfb;
     font-size: 20px;
     font-weight: 700;

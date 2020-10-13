@@ -2,8 +2,7 @@
 .mentions {
   margin-top: 100px;
   height: 438px;
-  background: no-repeat url(img/subscribe.jpg);
-  background-color: rgba(242, 242, 242, 0.5);
+  background: url(img/subscribe.jpg) no-repeat, rgba(242, 242, 242, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
 }
@@ -174,7 +173,6 @@
 .bottomNavColumn a {
   text-decoration: none;
   font-size: 16px;
-  line-height: 59px;
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #898989;
