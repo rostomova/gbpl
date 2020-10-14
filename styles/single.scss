@@ -3,8 +3,6 @@
 @import 'variables';
 
 .product {
-  //   position: absolute;
-
   &ImageWrap {
     width: 100%;
     height: 777px;
@@ -13,9 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // position: absolute;
-
-    // z-index: 1; //картинка наезжает(
 
     .arrow {
       width: 47px;
@@ -23,23 +18,14 @@
       background-color: rgba(42, 42, 42, 0.14);
       display: flex;
       justify-content: center;
-      text-align: center;
+      align-items: center;
 
       i {
-        //TO DO почему-то не работают картинки
-        font-family: FontAwesome;
         font-size: 24px;
-        line-height: 24px;
-        font-weight: 400;
         color: #ffffff;
-      }
-
-      img {
-        z-index: -1;
       }
     }
   }
-
   &Desc {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
@@ -48,8 +34,7 @@
     flex-direction: column;
     margin-top: -86px;
     z-index: 2;
-    // position: relative;
-    // top: 691px;
+    position: relative;
 
     &H1 {
       font-size: 14px;
@@ -60,6 +45,18 @@
       display: inline;
       margin-top: 73px;
       padding-bottom: 14px;
+      position: relative;
+    }
+
+    &H1:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: calc(50% - 64px / 2);
+      width: 64px;
+      height: 3px;
+      background-color: $pinkColor;
     }
 
     h2 {
@@ -152,7 +149,6 @@
       margin-top: 28px;
       margin-bottom: 122px;
       background-color: #ffffff;
-      //   background: url(img/pink_cart.svg) no-repeat, #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
