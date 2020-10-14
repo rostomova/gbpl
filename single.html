@@ -1,231 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous" />
-    
-    <link rel="stylesheet" href="styles/top.css">
-    <link rel="stylesheet" href="styles/bottom.css">
-    <link rel="stylesheet" href="styles/single.css">
-    
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <a href="#" class="logo">BRAN<span>D</span></a>
-        <form action="search">
-          <div class="browse">Browse <i class="fas fa-caret-down"></i></div>
-          <input type="text" placeholder="Search for Item..." />
-          <button class="search"><i class="fas fa-search"></i></button>
-        </form>
-        <img src="img/cart.png" alt="cart" class="cartImg" />
-        <button class="account">
-          My Account <i class="fas fa-caret-down"></i>
-        </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="styles/top.css">
+  <link rel="stylesheet" href="styles/bottom.css">
+  <link rel="stylesheet" href="styles/single.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">BRAN<span>D</span></a>
+      <form action="search">
+        <div class="browse">Browse <i class="fas fa-caret-down"></i></div>
+        <input type="text" placeholder="Search for Item..." />
+        <button class="search"><i class="fas fa-search"></i></button>
+      </form>
+      <img src="img/cart.png" alt="cart" class="cartImg" />
+      <button class="account">
+        My Account <i class="fas fa-caret-down"></i>
+      </button>
+    </div>
+  </header>
+  <nav class="top-menu">
+    <a href="#" class="menu">HOME</a>
+    <a href="#" class="menu">MAN</a>
+    <a href="#" class="menu">WOMAN</a>
+    <a href="#" class="menu">KIDS</a>
+    <a href="#" class="menu">ACCESORIES</a>
+    <a href="#" class="menu">FEATURED</a>
+    <a href="#" class="menu">HOT DEALS</a>
+  </nav>
+  <!--Окончание повтора по всем страницам-->
+
+  <div class="newArrivals">
+    <div class="newArrivalsWrap container">
+      <p class="newArrivalsHeader">NEW ARRIVALS</p>
+      <nav class="newArrivalsNav">
+        <a href="#" class="newArrivalsNavLink">HOME</a>
+        <p>/</p>
+        <a href="#" class="newArrivalsNavLink">WOMEN</a>
+        <p>/</p>
+        <a href="#" class="newArrivalsNavLink">NEW ARRIVALS</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div class="product">
+      <div class="productImageWrap">
+        <div class="arrow"><i class="fas fa-angle-left"></i></div>
+        <img src="img/single_product.jpg" alt="">
+        <div class="arrow"><i class="fas fa-angle-right"></i></div>
       </div>
-    </header>
-    <nav class="top-menu">
-      <a href="#" class="menu">HOME</a>
-      <a href="#" class="menu">MAN</a>
-      <a href="#" class="menu">WOMAN</a>
-      <a href="#" class="menu">KIDS</a>
-      <a href="#" class="menu">ACCESORIES</a>
-      <a href="#" class="menu">FEATURED</a>
-      <a href="#" class="menu">HOT DEALS</a>
-    </nav>
-    <!--Окончание повтора по всем страницам-->
+      <div class="productDesc container">
+        <div class="productDescH1">
+          WOMEN COLLECTION
+        </div>
+        <h2>MOSCHINO CHEAP AND CHIC</h2>
+        <p class="productDescText">Compellingly actualize fully researched processes before proactive outsourcing.
+          Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
+          parallel core competencies rather than exceptional portals.</p>
 
-    <div class="newArrivals">
-      <div class="newArrivalsWrap container">
-        <p class="newArrivalsHeader">NEW ARRIVALS</p>
-        <nav class="newArrivalsNav">
-          <a href="#" class="newArrivalsNavLink">HOME</a>
-          <p>/</p>
-          <a href="#" class="newArrivalsNavLink">WOMEN</a>
-          <p>/</p>
-          <a href="#" class="newArrivalsNavLink">NEW ARRIVALS</a>
+        <div class="productDescVar">
+          <p class="productDescVarText">MATERIAL: <span>COTTON</span></p>
+          <p class="productDescVarText">DESIGNER: <span>BINBURHAN</span></p>
+        </div>
+        <p class="productDescPrice">$561</p>
+        <div class="productDescLine"></div>
+        <div class="productDescOptions">
+          <!--TODO сделать формой-->
+          <div class="productDescOpt">
+            <h2 class="productDescOptH2">CHOOSE COLOR</h2>
+            <!--TODO Color-->
+            <input type="text" class="productDescOptInput" placeholder="Red">
+          </div>
+          <div class="productDescOpt">
+            <label for="size" class="productDescOptH2">CHOOSE SIZE</label>
+            <!--TODO choice Урок 4 30 минут-->
+            <div class="productDescOptInputWrap">
+              <select class="productDescOptInput" id="size">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+          </div>
+          <div class="productDescOpt">
+            <h2 class="productDescOptH2">QUANTITY</h2>
+            <input type="text" class="productDescOptInput" placeholder="2">
+          </div>
+        </div>
+        <div class="productDescBtn">
+          <img src="img/pink_cart.svg" alt="">
+          <p class="productDescBtnText">Add to Cart</p>
+        </div>
+        <!-- <button class="productDescBtn">Add to Cart</button> -->
+      </div>
+    </div>
+  </main>
+
+  <div class="alsoProducts">
+    <div class="container">
+      <div class="alsoProductsH2">YOU MAY LIKE ALSO</div>
+      <div class="alsoProductsWrap">
+        <div class="alsoProduct">
+          <div class="alsoProductImgWrap">
+            <img src="img/also_product1.png" alt="">
+          </div>
+          <p class="alsoProductName">BLAZE LEGGINS</p>
+          <p class="alsoProductPrice">$ 52.00</p>
+        </div>
+        <div class="alsoProduct">
+          <div class="alsoProductImgWrap">
+            <img src="img/also_product2.png" alt="">
+          </div>
+          <p class="alsoProductName">ALEXA SWEATER</p>
+          <p class="alsoProductPrice">$ 52.00</p>
+        </div>
+        <div class="alsoProduct">
+          <div class="alsoProductImgWrap">
+            <img src="img/also_product3.png" alt="">
+          </div>
+          <p class="alsoProductName">AGNES TOP</p>
+          <p class="alsoProductPrice">$ 52.00</p>
+        </div>
+        <div class="alsoProduct">
+          <div class="alsoProductImgWrap">
+            <img src="img/also_product4.png" alt="">
+          </div>
+          <p class="alsoProductName">SYLVA SWEATER</p>
+          <p class="alsoProductPrice">$ 52.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Повтор по всем страницам-->
+  <div class="mentions">
+    <div class="mentionsWrap container">
+      <div class="mention">
+        <img src="img/reviewPerson.png" alt="" />
+        <div class="mentionQuote">
+          <p class="quote">
+            ”Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+            pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+            pretium”
+          </p>
+          <p class="quoteSign">
+            <span>Bin Burhan</span>
+            <br />
+            Dhaka, Bd
+          </p>
+        </div>
+      </div>
+      <div class="subscribe">
+        <h2>SUBSCRIBE</h2>
+        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+        <form action="#">
+          <input type="text" name="email" placeholder="Enter Your Email" />
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bottom container">
+    <div class="bottomBrand">
+      <a href="#" class="logo">BRAN<span>D</span></a>
+      <p>
+        Objectively transition extensive data rather than cross functional
+        solutions. Monotonectally syndicate multidisciplinary materials before
+        go forward benefits. Intrinsicly syndicate an expanded array of
+        processes and cross-unit partnerships.
+        <br />
+        <br />
+        Efficiently plagiarize 24/365 action items and focused infomediaries.
+        Distinctively seize superior initiatives for wireless technologies.
+        Dynamically optimize.
+      </p>
+    </div>
+    <nav class="bottomNav">
+      <div class="bottomNavColumn">
+        <h2>COMPANY</h2>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">How It Works</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="bottomNavColumn">
+        <h2>INFORMATION</h2>
+        <a href="#">Tearms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">How to Buy</a>
+        <a href="#">How to Sell</a>
+        <a href="#">Promotion</a>
+      </div>
+      <div class="bottomNavColumn">
+        <h2>SHOP CATEGORY</h2>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Child</a>
+        <a href="#">Apparel</a>
+        <a href="#">Brows All</a>
+      </div>
+    </nav>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footerWrapper">
+        <p class="footerText">&copy; 2020 Brand All Rights Reserved.</p>
+        <nav class="footerNav">
+          <div class="footerSocial"><i class="fab fa-facebook-f"></i></div>
+          <div class="footerSocial"><i class="fab fa-twitter"></i></div>
+          <div class="footerSocial"><i class="fab fa-linkedin-in"></i></div>
+          <div class="footerSocial"><i class="fab fa-pinterest-p"></i></div>
+          <div class="footerSocial"><i class="fab fa-google-plus-g"></i></div>
         </nav>
       </div>
     </div>
+  </footer>
+</body>
 
-    <main>
-      <div class="product">
-        <div class="productImageWrap">
-          <div class="arrow"><i class="fas fa-angle-left"></i></div>
-          <img src="img/single_product.jpg" alt="">
-          <div class="arrow"><i class="fas fa-angle-right"></i></div>
-        </div>
-        <div class="productDesc container">
-          <h1 class="productDescH1">WOMEN COLLECTION</h1>
-          <h2>MOSCHINO CHEAP AND CHIC</h2>
-          <p class="productDescText">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-
-          <div class="productDescVar">
-            <p class="productDescVarText">MATERIAL: <span>COTTON</span></p>
-            <p class="productDescVarText">DESIGNER: <span>BINBURHAN</span></p>
-          </div>
-          <p class="productDescPrice">$561</p>
-          <div class="productDescLine"></div>
-          <div class="productDescOptions">
-            <div class="productDescOpt">
-              <h2 class="productDescOptH2">CHOOSE COLOR</h2>
-              <!--TODO Color-->
-              <input type="text" class="productDescOptInput" placeholder="Red">
-            </div>
-            <div class="productDescOpt">
-              <h2 class="productDescOptH2">CHOOSE SIZE</h2>
-              <!--TODO choice-->
-              <input type="text" class="productDescOptInput" placeholder="XXL" list="size">
-              <datalist id="size">
-                <option value="XS"></option>
-                <option value="S"></option>
-                <option value="M"></option>
-                <option value="L"></option>
-                <option value="XL"></option>
-                <option value="XXL"></option>
-              </datalist>
-            </div>
-            <div class="productDescOpt">
-              <h2 class="productDescOptH2">QUANTITY</h2>
-              <input type="text" class="productDescOptInput" placeholder="2">
-            </div>
-          </div>
-          <div class="productDescBtn">
-            <img src="img/pink_cart.svg" alt="">
-            <p class="productDescBtnText">Add to Cart</p>
-          </div>
-          <!-- <button class="productDescBtn">Add to Cart</button> -->
-        </div>
-      </div>
-    </main>
-
-    <div class="alsoProducts">
-      <div class="container">
-        <div class="alsoProductsH2">YOU MAY LIKE ALSO</div>
-        <div class="alsoProductsWrap">
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product1.png" alt="">
-            </div>
-            <p class="alsoProductName">BLAZE LEGGINS</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product2.png" alt="">
-            </div>
-            <p class="alsoProductName">ALEXA SWEATER</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product3.png" alt="">
-            </div>
-            <p class="alsoProductName">AGNES TOP</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product4.png" alt="">
-            </div>
-            <p class="alsoProductName">SYLVA SWEATER</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
-    <!--Повтор по всем страницам-->
-    <div class="mentions">
-      <div class="mentionsWrap container">
-        <div class="mention">
-          <img src="img/reviewPerson.png" alt="" />
-          <div class="mentionQuote">
-            <p class="quote">
-              ”Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-              pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
-              pretium”
-            </p>
-            <p class="quoteSign">
-              <span>Bin Burhan</span>
-              <br />
-              Dhaka, Bd
-            </p>
-          </div>
-        </div>
-        <div class="subscribe">
-          <h2>SUBSCRIBE</h2>
-          <p>FOR OUR NEWLETTER AND PROMOTION</p>
-          <form action="#">
-            <input type="text" name="email" placeholder="Enter Your Email" />
-            <button>Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="bottom container">
-      <div class="bottomBrand">
-        <a href="#" class="logo">BRAN<span>D</span></a>
-        <p>
-          Objectively transition extensive data rather than cross functional
-          solutions. Monotonectally syndicate multidisciplinary materials before
-          go forward benefits. Intrinsicly syndicate an expanded array of
-          processes and cross-unit partnerships.
-          <br />
-          <br />
-          Efficiently plagiarize 24/365 action items and focused infomediaries.
-          Distinctively seize superior initiatives for wireless technologies.
-          Dynamically optimize.
-        </p>
-      </div>
-      <nav class="bottomNav">
-        <div class="bottomNavColumn">
-          <h2>COMPANY</h2>
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">About</a>
-          <a href="#">How It Works</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="bottomNavColumn">
-          <h2>INFORMATION</h2>
-          <a href="#">Tearms & Condition</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">How to Buy</a>
-          <a href="#">How to Sell</a>
-          <a href="#">Promotion</a>
-        </div>
-        <div class="bottomNavColumn">
-          <h2>SHOP CATEGORY</h2>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Child</a>
-          <a href="#">Apparel</a>
-          <a href="#">Brows All</a>
-        </div>
-      </nav>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="footerWrapper">
-          <p class="footerText">&copy; 2020 Brand All Rights Reserved.</p>
-          <nav class="footerNav">
-            <div class="footerSocial"><i class="fab fa-facebook-f"></i></div>
-            <div class="footerSocial"><i class="fab fa-twitter"></i></div>
-            <div class="footerSocial"><i class="fab fa-linkedin-in"></i></div>
-            <div class="footerSocial"><i class="fab fa-pinterest-p"></i></div>
-            <div class="footerSocial"><i class="fab fa-google-plus-g"></i></div>
-          </nav>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
