@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#slider-range').slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [75, 300],
+          slide: function (event, ui) {
+            $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
+          },
+        });
+        $('#amount').val(
+          '$' +
+            $('#slider-range').slider('values', 0) +
+            ' - $' +
+            $('#slider-range').slider('values', 1)
+        );
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/top.css" />
+    <link rel="stylesheet" href="styles/bottom.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">BRAN<span>D</span></a>
+        <form action="search">
+          <div class="browse">Browse <i class="fas fa-caret-down"></i></div>
+          <input type="text" placeholder="Search for Item..." />
+          <button class="search"><i class="fas fa-search"></i></button>
+        </form>
+        <img src="img/cart.png" alt="cart" class="cartImg" />
+        <button class="account">
+          My Account <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+    </header>
+    <nav class="top-menu">
+      <a href="#" class="menu">HOME</a>
+      <a href="#" class="menu menuActive">MAN</a>
+      <a href="#" class="menu">WOMAN</a>
+      <a href="#" class="menu">KIDS</a>
+      <a href="#" class="menu">ACCESORIES</a>
+      <a href="#" class="menu">FEATURED</a>
+      <a href="#" class="menu">HOT DEALS</a>
+    </nav>
+    <!--Окончание повтора по всем страницам-->
+    <div class="newArrivals">
+      <div class="newArrivalsWrap container">
+        <p class="newArrivalsHeader">NEW ARRIVALS</p>
+        <nav class="newArrivalsNav">
+          <a href="#" class="newArrivalsNavLink">HOME</a>
+          <p>/</p>
+          <a href="#" class="newArrivalsNavLink">MEN</a>
+          <p>/</p>
+          <a href="#" class="newArrivalsNavLink">NEW ARRIVALS</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="product row container">
+      <nav class="productNav col-3">
+        <div class="accordion productAcc" id="accordionExample">
+          <div class="card productNavCard">
+            <div class="card-header productNavBtn" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left productNavBtnText"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  CATEGORY
+                  <i class="fas fa-caret-down"></i>
+                  <i class="fas fa-caret-up"></i>
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body sliderMenuPointsWrap">
+                <a href="#">Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Denim</a>
+                <a href="#">Hoodies & Sweatshirts</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Pants</a>
+                <a href="#">Polos</a>
+                <a href="#">Shirts</a>
+                <a href="#">Shoes</a>
+                <a href="#">Shorts</a>
+                <a href="#">Sweaters & Khits</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Tanks</a>
+              </div>
+            </div>
+          </div>
+          <div class="card productNavCard">
+            <div class="card-header productNavBtn" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed productNavBtnText"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  BRAND
+                  <i class="fas fa-caret-down"></i>
+                  <i class="fas fa-caret-up"></i>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body sliderMenuPointsWrap">
+                <a href="#">Mango</a>
+                <a href="#">Zara</a>
+                <a href="#">YaYa</a>
+              </div>
+            </div>
+          </div>
+          <div class="card productNavCard">
+            <div class="card-header productNavBtn" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed productNavBtnText"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  DESIGNER
+                  <i class="fas fa-caret-down"></i>
+                  <i class="fas fa-caret-up"></i>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body sliderMenuPointsWrap">
+                <a href="#">Antonio Valenso</a>
+                <a href="#">Mirra Wielberg</a>
+                <a href="#">Donna Rosario</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="productItems col-9">
+        <nav class="productItemsNavWrap row">
+          <div class="productItemsNav col-4">
+            <h2 class="productItemsNavH2">TRENDING NOW</h2>
+            <div class="productItemsNavMain">
+              <a href="">Bohemian</a>
+              <div class="line"></div>
+              <a href="">Floral</a>
+              <div class="line"></div>
+              <a href="">Bohemian</a>
+              <a href="">Floral</a>
+              <div class="line"></div>
+              <a href="">Lasce</a>
+              <div class="line"></div>
+              <a href="">Bohemian</a>
+            </div>
+          </div>
+          <div class="productItemsNav col-4">
+            <h2 class="productItemsNavH2">SIZE</h2>
+            <div class="productItemsNavMain">
+              <!--Стилизовать инпуты в серый-->
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="xxs" name="xxs" />
+                <label for="xxs">XXS</label>
+              </div>
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="xs" name="xs" />
+                <label for="xs">XS</label>
+              </div>
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="s" name="s" />
+                <label for="s">S</label>
+              </div>
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="m" name="m" />
+                <label for="m">M</label>
+              </div>
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="l" name="l" />
+                <label for="l">L</label>
+              </div>
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="xl" name="xl" />
+                <label for="xl">XL</label>
+              </div>
+              <div class="productItemsNavInput">
+                <input type="checkbox" id="xxl" name="xxl" />
+                <label for="xxl">XXL</label>
+              </div>
+            </div>
+          </div>
+          <div class="productItemsNav col-4">
+            <h2 class="productItemsNavH2">PRICE</h2>
+            <!--Вставить слайдер-->
+            <div id="slider-range"></div>
+          </div>
+        </nav>
+        <div class="productItemsSort row">
+          <div class="productItemsSortBy">Sort By</div>
+          <select class="productItemsSortBySelect" name="sort" id="sort">
+            <option value="name" selected>Name</option>
+            <option value="price">Price</option>
+          </select>
+          <div class="productItemsSortShow">Show</div>
+          <select class="productItemsSortShowSelect" name="show" id="show">
+            <option value="9" selected>09</option>
+            <option value="18">18</option>
+            <option value="36">36</option>
+          </select>
+        </div>
+        <div class="productItemsWrap row">
+          <div class="productItem col-4">
+            <img src="img/product1.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product2.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product3.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product4.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product5.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product6.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product7.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product8.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+          <div class="productItem col-4">
+            <img src="img/product9.jpg" alt="" />
+            <p class="productName">MANGO PEOPLE T-SHIRT</p>
+            <p class="productPrice">$ 52.00</p>
+          </div>
+        </div>
+
+        <div class="mainBottom">
+          <nav aria-label="Page navigation example" class="col-4 pages">
+            <ul class="pagination">
+              <li class="page-item disabled pageItem">
+                <a class="page-link pageLink" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active pageItem pageItemActive">
+                <a class="page-link pageLink" href="#">1</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">2</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">3</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">4</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">5</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">6</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">...</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#">20</a>
+              </li>
+              <li class="page-item pageItem">
+                <a class="page-link pageLink" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="viewAll">View All</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="offer">
+      <div class="offerWrap container">
+        <div class="detail">
+          <h2 class="detailH2">Free Delivery</h2>
+          <p class="detailText">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="detail">
+          <h2 class="detailH2">Sales & discounts</h2>
+          <p class="detailText">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="detail">
+          <h2 class="detailH2">Quality assurance</h2>
+          <p class="detailText">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Повтор по всем страницам-->
+    <div class="mentions">
+      <div class="mentionsWrap container">
+        <div class="mention">
+          <img src="img/reviewPerson.png" alt="" />
+          <div class="mentionQuote">
+            <p class="quote">
+              ”Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+              pretium”
+            </p>
+            <p class="quoteSign">
+              <span>Bin Burhan</span>
+              <br />
+              Dhaka, Bd
+            </p>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h2>SUBSCRIBE</h2>
+          <p>FOR OUR NEWLETTER AND PROMOTION</p>
+          <form action="#">
+            <input type="text" name="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom container">
+      <div class="bottomBrand">
+        <a href="#" class="logo">BRAN<span>D</span></a>
+        <p>
+          Objectively transition extensive data rather than cross functional
+          solutions. Monotonectally syndicate multidisciplinary materials before
+          go forward benefits. Intrinsicly syndicate an expanded array of
+          processes and cross-unit partnerships.
+          <br />
+          <br />
+          Efficiently plagiarize 24/365 action items and focused infomediaries.
+          Distinctively seize superior initiatives for wireless technologies.
+          Dynamically optimize.
+        </p>
+      </div>
+      <nav class="bottomNav">
+        <div class="bottomNavColumn">
+          <h2>COMPANY</h2>
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">How It Works</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="bottomNavColumn">
+          <h2>INFORMATION</h2>
+          <a href="#">Tearms & Condition</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">How to Buy</a>
+          <a href="#">How to Sell</a>
+          <a href="#">Promotion</a>
+        </div>
+        <div class="bottomNavColumn">
+          <h2>SHOP CATEGORY</h2>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Child</a>
+          <a href="#">Apparel</a>
+          <a href="#">Brows All</a>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footerWrapper">
+          <p class="footerText">&copy; 2020 Brand All Rights Reserved.</p>
+          <nav class="footerNav">
+            <div class="footerSocial"><i class="fab fa-facebook-f"></i></div>
+            <div class="footerSocial"><i class="fab fa-twitter"></i></div>
+            <div class="footerSocial"><i class="fab fa-linkedin-in"></i></div>
+            <div class="footerSocial"><i class="fab fa-pinterest-p"></i></div>
+            <div class="footerSocial"><i class="fab fa-google-plus-g"></i></div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
