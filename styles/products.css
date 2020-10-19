@@ -32,10 +32,6 @@
   text-decoration: none;
 }
 
-.fa-caret-up {
-  display: none;
-}
-
 .product {
   margin-top: 59px;
 }
@@ -80,7 +76,25 @@
   color: #f16d7f;
 }
 
-.productNavCard {
+.product .fa-caret-down {
+  display: none;
+}
+
+.product .productNavBtnText.collapsed .fa-caret-down {
+  display: inline-block;
+  color: #6f6e6e;
+}
+
+.product .productNavBtnText.collapsed .fa-caret-up {
+  display: none;
+}
+
+.product .productNavBtnText.collapsed {
+  color: #6f6e6e;
+  text-decoration: none;
+}
+
+.productNavBtnText.collapsed:first-child .productNavCard {
   border: none;
   padding-bottom: 18px;
 }

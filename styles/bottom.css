@@ -12,6 +12,12 @@
   background-size: cover;
 }
 
+@media (max-width: 840px) {
+  .mentions {
+    display: none;
+  }
+}
+
 .mentionsWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,8 +135,26 @@
           justify-content: space-between;
 }
 
+@media (max-width: 840px) {
+  .bottom {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .bottomBrand {
   width: 427px;
+}
+
+@media (max-width: 840px) {
+  .bottomBrand {
+    width: 100%;
+    padding-left: 20px;
+  }
 }
 
 .bottom p {
@@ -151,6 +175,16 @@
           justify-content: space-between;
 }
 
+@media (max-width: 640px) {
+  .bottomNav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .bottomNavColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +200,12 @@
   margin-left: 80px;
 }
 
+@media (max-width: 640px) {
+  .bottomNavColumn:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
 .bottomNavColumn h2 {
   font-size: 18px;
   line-height: 26px;
@@ -173,6 +213,12 @@
   letter-spacing: 0.025em;
   color: #f16d7f;
   margin-bottom: 34px;
+}
+
+@media (max-width: 640px) {
+  .bottomNavColumn h2 {
+    margin-bottom: 10px;
+  }
 }
 
 .bottomNavColumn a {
@@ -206,6 +252,15 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 480px) {
+  .footerWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footerText {

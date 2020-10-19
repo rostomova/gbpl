@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Single</title>
+    <title>Checkout</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="styles/top.css" />
     <link rel="stylesheet" href="styles/bottom.css" />
-    <link rel="stylesheet" href="styles/single.css" />
+    <link rel="stylesheet" href="styles/checkout.css" />
   </head>
 
   <body>
@@ -50,108 +50,81 @@
         <nav class="newArrivalsNav">
           <a href="#" class="newArrivalsNavLink">HOME</a>
           <p>/</p>
-          <a href="#" class="newArrivalsNavLink">WOMEN</a>
+          <a href="#" class="newArrivalsNavLink">MEN</a>
           <p>/</p>
           <a href="#" class="newArrivalsNavLink">NEW ARRIVALS</a>
         </nav>
       </div>
     </div>
 
-    <main>
-      <div class="product">
-        <div class="productImageWrap">
-          <div class="arrow"><i class="fas fa-angle-left"></i></div>
-          <img src="img/single_product.jpg" alt="" />
-          <div class="arrow"><i class="fas fa-angle-right"></i></div>
-        </div>
-        <div class="productDesc container">
-          <div class="productDescH1">WOMEN COLLECTION</div>
-          <h2>MOSCHINO CHEAP AND CHIC</h2>
-          <p class="productDescText">
-            Compellingly actualize fully researched processes before proactive
-            outsourcing. Progressively syndicate collaborative architectures
-            before cutting-edge services. Completely visualize parallel core
-            competencies rather than exceptional portals.
-          </p>
+    <div class="checkout container">
+      <div class="checkoutOption">
+        <h2 class="checkoutOptionH2"><span>01.</span>SHIPPING ADDRESS</h2>
+        <div class="checkoutOptionWrap">
+          <div class="checkoutGuest">
+            <h3 class="checkoutOptionH3">CHECK AS A GUEST OR REGISTER</h3>
+            <p class="checkoutOptionHint">
+              Register with us for future convenience
+            </p>
 
-          <div class="productDescVar">
-            <p class="productDescVarText">MATERIAL: <span>COTTON</span></p>
-            <p class="productDescVarText">DESIGNER: <span>BINBURHAN</span></p>
-          </div>
-          <p class="productDescPrice">$561</p>
-          <div class="productDescLine"></div>
-          <div class="productDescOptions">
-            <!--TODO сделать формой-->
-            <div class="productDescOpt">
-              <h2 class="productDescOptH2">CHOOSE COLOR</h2>
-              <!--TODO Color-->
-              <input
-                type="text"
-                class="productDescOptInput"
-                placeholder="Red"
-              />
-            </div>
-            <div class="productDescOpt">
-              <label for="size" class="productDescOptH2">CHOOSE SIZE</label>
-              <!--TODO choice Урок 4 30 минут-->
-              <div class="productDescOptInputWrap">
-                <select class="productDescOptInput" id="size">
-                  <option value="xs">XS</option>
-                  <option value="s">S</option>
-                  <option value="m">M</option>
-                  <option value="l">L</option>
-                  <option value="xl">XL</option>
-                  <option value="xxl">XXL</option>
-                </select>
+            <form action="" class="checkoutGuestForm">
+              <div class="checkoutGuestFormPoint">
+                <input type="radio" id="guest" name="checkoutGuest" />
+                <label for="guest" class="checkoutGuestLabel"
+                  >CHECKOUT AS GUEST</label
+                >
               </div>
-            </div>
-            <div class="productDescOpt">
-              <h2 class="productDescOptH2">QUANTITY</h2>
-              <input type="text" class="productDescOptInput" placeholder="2" />
-            </div>
+              <div class="checkoutGuestFormPoint">
+                <input type="radio" id="register" name="checkoutGuest" />
+                <label for="register" class="checkoutGuestLabel"
+                  >REGISTER
+                </label>
+              </div>
+            </form>
+
+            <p class="checkoutOptionH3">REGISTER AND SAVE TIME!</p>
+            <p class="checkoutOptionHint">
+              Register with us for future convenience
+            </p>
+
+            <p class="checkoutOptionHint mt33">
+              <i class="fas fa-angle-double-right"></i>Fast and easy checkout
+            </p>
+            <p class="checkoutOptionHint">
+              <i class="fas fa-angle-double-right"></i>
+              Easy access to your order history and status
+            </p>
+            <button class="mt38">CONTINUE</button>
           </div>
-          <div class="productDescBtn">
-            <img src="img/pink_cart.svg" alt="" />
-            <p class="productDescBtnText">Add to Cart</p>
-          </div>
-          <!-- <button class="productDescBtn">Add to Cart</button> -->
+          <form class="checkoutLogin">
+            <h3 class="checkoutOptionH3">ALREADY REGISTERED?</h3>
+            <p class="checkoutOptionHint">Please log in below</p>
+            <p class="checkoutLoginText">EMAIL ADDRESS <span>*</span></p>
+            <input type="email" class="checkoutLoginInput" />
+            <p class="checkoutLoginText">PASSWORD <span>*</span></p>
+            <input type="password" class="checkoutLoginInput" />
+            <p class="checkoutLoginTextRed">* Required Fields</p>
+            <div class="checkoutLoginBTNWrap mt35">
+              <button>LOG IN</button>
+              <a href="#">Forgot Password?</a>
+            </div>
+          </form>
         </div>
       </div>
-    </main>
-
-    <div class="alsoProducts">
-      <div class="container">
-        <div class="alsoProductsH2">YOU MAY LIKE ALSO</div>
-        <div class="alsoProductsWrap">
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product1.png" alt="" />
-            </div>
-            <p class="alsoProductName">BLAZE LEGGINS</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product2.png" alt="" />
-            </div>
-            <p class="alsoProductName">ALEXA SWEATER</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product3.png" alt="" />
-            </div>
-            <p class="alsoProductName">AGNES TOP</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-          <div class="alsoProduct">
-            <div class="alsoProductImgWrap">
-              <img src="img/also_product4.png" alt="" />
-            </div>
-            <p class="alsoProductName">SYLVA SWEATER</p>
-            <p class="alsoProductPrice">$ 52.00</p>
-          </div>
-        </div>
+      <div class="checkoutOption">
+        <h2 class="checkoutOptionH2"><span>02.</span>BILLING INFORMATION</h2>
+      </div>
+      <div class="checkoutOption">
+        <h2 class="checkoutOptionH2"><span>03.</span>SHIPPING INFORMATION</h2>
+      </div>
+      <div class="checkoutOption">
+        <h2 class="checkoutOptionH2"><span>04.</span>SHIPPING METHOD</h2>
+      </div>
+      <div class="checkoutOption">
+        <h2 class="checkoutOptionH2"><span>05.</span>PAYMENT METHOD</h2>
+      </div>
+      <div class="checkoutOption">
+        <h2 class="checkoutOptionH2"><span>06.</span>ORDER REVIEW</h2>
       </div>
     </div>
 

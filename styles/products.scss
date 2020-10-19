@@ -24,10 +24,6 @@
   }
 }
 
-.fa-caret-up {
-  display: none;
-}
-
 .product {
   margin-top: 59px;
 
@@ -68,7 +64,25 @@
     }
   }
 
-  &NavCard {
+  .fa-caret-down {
+    display: none;
+  }
+
+  .productNavBtnText.collapsed .fa-caret-down {
+    display: inline-block;
+    color: #6f6e6e;
+  }
+
+  .productNavBtnText.collapsed .fa-caret-up {
+    display: none;
+  }
+
+  .productNavBtnText.collapsed {
+    color: #6f6e6e;
+    text-decoration: none;
+  }
+
+  .productNavBtnText.collapsed:first-child &NavCard {
     border: none;
     padding-bottom: 18px;
   }
