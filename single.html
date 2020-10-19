@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Single</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -18,17 +18,19 @@
 
   <body>
     <header>
-      <div class="container">
+      <div class="headerWrap container">
         <a href="#" class="logo">BRAN<span>D</span></a>
         <form action="search">
           <div class="browse">Browse <i class="fas fa-caret-down"></i></div>
           <input type="text" placeholder="Search for Item..." />
           <button class="search"><i class="fas fa-search"></i></button>
         </form>
-        <img src="img/cart.png" alt="cart" class="cartImg" />
-        <button class="account">
-          My Account <i class="fas fa-caret-down"></i>
-        </button>
+        <div class="accountWrap">
+          <img src="img/cart.png" alt="cart" class="cartImg" />
+          <button class="account">
+            My Account <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
       </div>
     </header>
     <nav class="top-menu">

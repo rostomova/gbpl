@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Products</title>
     <link
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -59,29 +59,32 @@
 
   <body>
     <header>
-      <div class="container">
+      <div class="headerWrap container">
         <a href="#" class="logo">BRAN<span>D</span></a>
         <form action="search">
           <div class="browse">Browse <i class="fas fa-caret-down"></i></div>
           <input type="text" placeholder="Search for Item..." />
           <button class="search"><i class="fas fa-search"></i></button>
         </form>
-        <img src="img/cart.png" alt="cart" class="cartImg" />
-        <button class="account">
-          My Account <i class="fas fa-caret-down"></i>
-        </button>
+        <div class="accountWrap">
+          <img src="img/cart.png" alt="cart" class="cartImg" />
+          <button class="account">
+            My Account <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
       </div>
     </header>
     <nav class="top-menu">
       <a href="#" class="menu">HOME</a>
-      <a href="#" class="menu menuActive">MEN</a>
-      <a href="#" class="menu">WOMAN</a>
+      <a href="#" class="menu">MEN</a>
+      <a href="#" class="menu">WOMEN</a>
       <a href="#" class="menu">KIDS</a>
       <a href="#" class="menu">ACCESORIES</a>
       <a href="#" class="menu">FEATURED</a>
       <a href="#" class="menu">HOT DEALS</a>
     </nav>
     <!--Окончание повтора по всем страницам-->
+    
     <div class="newArrivals">
       <div class="newArrivalsWrap container">
         <p class="newArrivalsHeader">NEW ARRIVALS</p>

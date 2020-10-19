@@ -10,6 +10,10 @@
     padding-top: 33px;
     padding-bottom: 33px;
 
+    @media (max-width: 840px) {
+      text-align: center;
+    }
+
     &H2 {
       font-size: 16px;
       line-height: 1.2;
@@ -39,6 +43,11 @@
     &Wrap {
       display: flex;
       margin-top: 39px;
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
@@ -79,6 +88,10 @@
     flex-direction: column;
     padding-right: 35px;
 
+    @media (max-width: 840px) {
+      padding-left: 35px;
+    }
+
     &Text {
       font-size: 12px;
       line-height: 20px;
@@ -108,6 +121,10 @@
       background-color: #ffffff;
       border: 1px solid #eaeaea;
       margin-top: 16px;
+
+      @media (max-width: 840px) {
+        width: 100%;
+      }
     }
   }
 
@@ -120,6 +137,11 @@
     line-height: 1.2;
     font-weight: 700;
     color: #4a4a4a;
+
+    @media (max-width: 840px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
   }
 }
 

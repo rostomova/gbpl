@@ -9,17 +9,30 @@ body {
 .container {
   width: $siteWidth;
   margin: 0 auto;
+
+  @media (max-width: 1139px) {
+    width: 100%;
+  }
 }
 
 header {
   height: 100px;
-  display: flex;
   border-bottom: 1px solid #ececec;
 
-  .container {
+  @media (max-width: 840px) {
+    height: inherit;
+    margin-top: 20px;
+  }
+
+  .headerWrap {
     height: inherit;
     display: flex;
     align-items: center;
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   form {
@@ -35,6 +48,16 @@ header {
       border: none;
       font-family: inherit;
       padding: 14px 16px;
+
+      @media (max-width: 480px) {
+        width: 100px;
+        flex-grow: 1;
+      }
+    }
+
+    @media (max-width: 840px) {
+      margin-top: 20px;
+      margin-left: 0;
     }
   }
 }
@@ -86,8 +109,18 @@ header {
   background-color: #ffffff;
 }
 
-.cartImg {
+.accountWrap {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 840px) {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.cartImg {
   margin-right: 26px;
 }
 
@@ -111,6 +144,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 640px) {
+    justify-content: space-evenly;
+    // padding-left: 15px;
+    // padding-right: 15px;
+  }
 }
 
 .menu {
@@ -122,10 +162,14 @@ header {
 
   &:not(:last-child) {
     margin-right: 35px;
+
+    @media (max-width: 640px) {
+      margin-right: 15px;
+    }
   }
 }
 
-//cart, singlepage
+//cart, singlepage, checkout
 .newArrivals {
   height: 142px;
   background-color: #f8f3f4;
@@ -135,6 +179,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &Header {
@@ -146,6 +195,10 @@ header {
 
   &Nav {
     display: flex;
+
+    @media (max-width: 480px) {
+      margin-top: 10px;
+    }
 
     p {
       font-size: 14px;
